@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<!--[// This is a comment I want to say that this is the base links for all the links on this app \\]-->
+
+<!-- <base href="http://www.server.com/app-name/path/"> -->
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/b/378 -->
+
+
+  <title>Tony Brown Site</title>
+  <meta name="description" content="jQuery mobile site, mobile design and development, Art Instituet AMiE awards">
+  <meta name="author" content="Tony Brown">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+
+ 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+    <!-- For iPad 1-->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+    <!-- For Nokia -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+    <!-- For everything else -->
+  <link rel="shortcut icon" href="/favicon.ico">
+	 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />  
+    <link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+
+<!--iOS. Delete if not required -->
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+	   Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+	   For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+ 
+</head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+ 
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />  
+    <link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDgx1A-Af1W_Kg_LGLy3EG5XWorcwp6CGk&sensor=true" type="text/javascript">
+    </script>
+
+    <div id="details" data-role="page" class="details-page">
+
+    	<div data-role="header" data-theme="a">
+			    <nav data-role='navbar' data-theme='c' class='custom'>
+					<ul data-ajax='false'>
+						<li class='button'><a href="index.html" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+						
+						<li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+					</ul>
+				</nav>
+
+				
+				<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+				<h1>Directions</h1>
+              
+            </div>
+        <div data-role="content" id="map_content" data-theme="a">
+                <div id="map_content">
+                    <div id="map_canvas" style="width: 250px height: 250px"></div>
+                </div>
+            </div>
+
+            <div data-role='footer' data-theme='a'>
+		
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+			<p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+			</h4>	
+
+		</div><!-- end footer -->	
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script type="js/libs/jquery-ui.maps.js"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(42.342718,-71.122463),
+          zoom: 19,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>

@@ -1,0 +1,1066 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<!--[// This is a comment I want to say that this is the base links for all the links on this app \\]-->
+
+<!-- <base href="http://www.server.com/app-name/path/"> -->
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/b/378 -->
+
+
+  <title>Tony Brown Site</title>
+  <meta name="description" content="jQuery mobile site, mobile design and development, Art Instituet AMiE awards">
+  <meta name="author" content="Tony Brown">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+
+ 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+    <!-- For iPad 1-->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+    <!-- For Nokia -->
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+    <!-- For everything else -->
+  <link rel="shortcut icon" href="/favicon.ico">
+	 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />  
+    <link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+
+<!--iOS. Delete if not required -->
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+	   Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+	   For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+ 
+</head>
+
+<body class="ui-mobile-viewport">
+		
+	<div data-role="page" id="one" data-title='Home_Page'>
+	
+		
+		<div data-role="header" class='custom' data-theme='a'>
+
+			
+			<nav data-role='navbar' data-theme='c' class='custom'>
+				<ul data-ajax='false'>
+					<li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+					<li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+					<li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+					<li class='button'><a href="#details" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+					<li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+				</ul>
+			</nav>
+
+
+			<img src="img/black-1.png" alt=""  id="sm-logo"/>
+			
+			<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+
+
+			<h1>AMiE Awards</h1>
+			
+		</div><!-- /header -->
+
+		<div data-role="content" data-theme='c'>	
+
+			<h2>We're back!</h2>
+			<p>
+				The 2012 AIME Awards are here and it's time once again to honor work from
+				Digital Film Making &amp; Video Production, Audio Production, Photography, Media Arts
+				&amp;Animation, Fashion &amp; Retail Management, Advertising, Graphic Design &amp; Interactive Media and 
+				General Education
+			</p>
+			
+			<img src="img/coolidge.gif" alt="" />
+				
+		</div><!-- /content -->
+
+		<div data-role='footer' data-theme='a'>
+		
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+			<p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+			</h4>	
+
+		</div><!-- end footer -->	
+		
+	</div><!-- /page -->
+	
+		<div data-role="page" id="about" data-title='About AMiE' >
+	
+		
+		<div data-role="header" class='custom' data-theme='a'>
+
+			
+		<nav data-role='navbar' data-theme='c' class='custom'>
+			<ul>
+				<li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+				<li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+				<li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+				<li class='button'><a href="#details" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+				<li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+			</ul>
+		</nav>
+				<img src="img/black-1.png" alt=""  id="sm-logo"/>
+			<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+			<h1>AMiE Awards</h1>
+			
+		</div><!-- /header -->
+		
+		<div data-role="content" data-theme='c'>	
+
+			<div data-role='collapsible' data-collapsed='true' data-icon='custom' id='head1'>
+			<h1>Department Heads</h1>	
+			<div data-role='collapsible'>	
+				<h2>Digital Filmaking &amp; Video Production</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="dfv.html" data-rel='dialog' data-transition='slidedown'
+							 data-icon='custom' id='head1'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Art Cohen</h3>
+						<p>digital film making</p>
+						<p>video production</p>
+						</a>
+						<a href="dfv.html" data-role='button' data-rel='dialog' 
+							data-transition='pop'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='collapsible'>	
+				<h2>Audio Production</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="audio.html" data-rel='dialog' data-transition='slideup'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Allan Kraut</h3>
+						<p>audio category</p>
+						</a>
+						<a href="audio.html" data-role='button' data-rel='dialog' data-transition='slideup' data-split-icon='custom' data-split-theme='a' id='head1'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='collapsible'>	
+				<h2>Graphic Design</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="graphic.html" data-rel='dialog' data-transition='flip'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Stephanie Warnesky</h3>
+						<p>Graphic Design category</p>
+						</a>
+						<a href="graphic.html" data-role='button' data-rel='dialog' data-transition='slidedown'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='collapsible'>	
+				<h2>Media Arts &amp; Animation</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="ma.html" data-rel='dialog' data-transition='slidedown'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Jason Donati</h3>
+						<p>Media Arts &amp; Animation</p>
+						</a>
+						<a href="ma.html" data-role='button' data-rel='dialog' data-transition='flip'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='collapsible'>	
+				<h2>Photography</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="photo.html" data-rel='dialog' data-transition='flip'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Dan O'Connor</h3>
+						<p>Photography category</p>
+						</a>
+						<a href="photo.html" data-role='button' data-rel='dialog'
+							 data-transition='flip'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role='collapsible'>	
+				<h2>Web Design &amp; Interactive Media</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="web.html" data-rel='dialog' data-transition='slideup'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Jason Donati</h3>
+						<p>Web category</p>
+						</a>
+						<a href="web.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+			<div data-role='collapsible'>	
+				<h2>General Education</h2>	
+				<ul data-role='listview' data-split-icon='custom' data-split-theme='a' id='head2'>
+					<li class="m1">
+						<a href="gen.html" data-rel='dialog' data-transition='slideup'>	
+						<img src="img/amie-small1.png" alt="" />					
+						<h3>Tanya Larkin</h3>
+						<p>Web category</p>
+						</a>
+						<a href="gen.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>	
+					</li>
+				</ul>
+			</div>
+										
+		</div><!-- end collapsible set -->
+
+		<h2>Rules for submission</h2>
+			<p>If you attended NEIA from Jan. 1, 2011-March 1, 2012 you are eligible to submit your work. </p>
+               <p> Please fill out all forms legibly and completely. If you are selected as a winner, this information will be exhibited exactly as it is submitted. No changes can be made after submission, and NEIA cannot be responsible for errors in the submission form.  Any entry not accompanied with a submission form will be disqualified.</p>
+               <p>&nbsp;</p>
+               <ul style="list-style:circle; padding-left:30px;">
+  		<!--	<li>No exclusions for entries.<br> &nbsp;</li> -->
+                 <li>You must submit your work to your department chair with a completed submissions form.</li><br>
+			<li>Entries that were completed during Winter 2011 and Winter 2012 are eligible. Any work done before Winter 2011 will not be accepted.<br>
+			&nbsp;</li>
+			<li>Requirements are different per department. Please check departments' link for specific rules and categories. <br>
+			&nbsp;</li>
+			<li>In order to submit projects to the 2012 AiME Awards, you must have been enrolled at The New England Institute of Art from January 2011 to May 2012.<br>&nbsp;</li>
+            <li>Deadline for submissions: March 1st 2012<br>&nbsp;</li>
+          </ul>
+
+		<h2>About AiME Awards</h2>
+			<p>Bigger and better than ever, the 2011 AiME Awards will recognize work from Digital Filmmaking & Video Production, Audio Production, Photography, Media Arts & Animation, Fashion & Retail Management, Advertising, Graphic Design, Web Design & Interactive Media and General Education. The deadline for submission is March 1st, 2011. The 2011 AiME Awards show will be held on April 7th at 6pm at the Coolidge Corner Theatre.
+			</p>
+			
+			<h2>Frequently Asked Questions(FAQS)</h2>
+			<ol>
+				
+				<li><h3>Q:When do I need to submit my work by?</h3></li>
+				<li><h3>A:The deadline for all submissions is March 1st, 2011.</h3></li>
+				<li><h3>Q:What if copyrighted material is used within my project, can I still submit?</h3></li>
+				<li><h3>A:Yes.</h3></li>
+				<li><h3>Q:How will I know if I have been nominated?</h3></li>
+				<li><h3>A:If you are nominated to win an award you will be contacted after the final decisions are made.</h3></li>
+				<li><h3>Q:Will I still get an award if I can't make it to the awards show?</h3></li>
+				<li><h3>A:Yes.</h3></li>
+				<li><h3>Q:What If I worked on my project with a partner or a group of people, who will receive the award if we win?</h3></li>
+				<li><h3>A:Only one person can win an award. But a groups name can be put on the award. More than one person can go up on stage to accept the award.</h3></li>
+				<li><h3>Q:When/Where is the awards show being held?</h3></li>
+				<li><h3>A: At the Coolidge Corner Theatre on April 7th, 2011, at 6:00 pm.</h3></li>
+				<li><h3>Q:Will it cost money to attend the show?</h3></li>
+				<li><h3>A: No, the AiME Awards are a free event.</h3></li>
+				<li><h3>Q:How long will the show be?</h3></li>
+				<li><h3>A:Approximately 3 hours long.</h3></li>
+				<li><h3>Q:Can I still submit work if I am a recent graduate of The New England Institute of Art?.</h3></li>
+				<li><h3>A:Yes, you can submit work to the AiMEs if you were enrolled at The New England Institute of Art between January 2010 and May 2011. But, the work you submit must have been completed between January 2010 and May 2011. Any work with a completion date that falls before January 1st, 2010 will not be considered for submission.</h3></li>
+				
+			</ol>	
+				
+		</div><!-- /content -->
+
+		<div data-role='footer' data-theme='a' >
+		
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+			<p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+			</h4>	
+		</div><!-- end footer -->	
+		
+	</div><!-- /page -->
+	
+	<div data-role="page" id="submit" data-title='Submit' data-transition='pop' >
+	
+		
+		<div data-role="header" class='custom' data-theme='a'>
+
+		<nav data-role='navbar' data-theme='c' class='custom'>
+			<ul data-ajax='false'>
+				<li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+				<li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+				<li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+				<li class='button'><a href="#details" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+				<li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+			</ul>
+		</nav>
+			
+			
+		<img src="img/black-1.png" alt=""  id="sm-logo"/>
+			<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+			<h1>Submissions</h1>
+			
+		</div><!-- /header -->
+
+		<div data-role="content" data-theme='c'>
+			<h2>Find your program below</h2>
+		<h2>Get Yours: </h2>	
+			<div data-role="collapsible-set">
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Audio</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Audio Mix (This project will be judged on how well the audio is mixed. Levels, compression, equalization and other effects will be considered. Submissions can be stereo, mono or surround.. )
+					</p></li>
+					<li><p>Best Sound for Picture (This project will be judged on how well the audio fits with the video portion, as well as levels and effects [including panning and reverb])
+					</p></li>
+					<li><p>Best Overall Production (This project would need to have all of the requirements for best mix but, the student should have also tracked the audio as well as had something to do with the performance. This could be choosing the performers, arrangements and other aspects of a complete audio production.
+					</p></li>
+				</ul>
+				<h3>Requirements for submission</h3>
+				<ol>
+					<li><p>No more than 2 students can submit the same project. The students should have worked on the project equally.
+					</p></li>
+					<li><p>Projects can also be previous submissions for other awards such as the AES student award.
+					
+					</p></li>
+				</ol>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+			</div><!-- end /collapsible -->
+		
+		
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Digital Filmmaking and Video Production</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Narrative Piece Submissions to this category includes any fictional work that tells a complete story. This includes (but is not limited to) traditional narrative, mockumentaries, sketch comedy, etc. Among the criteria the jury will use to judge in this category: Story & Storytelling, Visual Quality, Technical Proficiency, Overall Creativity, and Collaboration.
+					</p></li>
+					<li><p>Best Non-Fiction Piece Submissions to this category must be completely non-fictional documentaries. Among the criteria the jury will use to judge in this category: Story & Storytelling, Visual Quality, Technical Proficiency, Overall Creativity, and Collaboration.
+					</p></li>
+					<li><p>Best Experimental Piece This category encompasses all pieces that do not clearly qualify for either of the other two categories. These include, but are not limited to, commercials, music videos, expressionistic/abstract pieces, trailers (of original work), television show intros, montages, etc. Among the criteria the jury will use to judge in this category: Visual Quality, Technical Proficiency, Overall Creativity, and how well the piece fulfilled its apparent purpose.
+					</p></li>
+				</ul>
+				<h3>General Submissions Rules</h3>
+				<ol>
+					<li>
+						<p>
+							Submissions may be from 30 seconds to 8 minutes long. Pieces must be submitted individually --
+							nocompilations or reels -- and in their entirety on an approved format. The submission media must be 
+							clearly labeled with the title.
+						</p>
+					</li>
+					<li>
+						<p>
+							SOn each piece, all credited writers; directors and creative producers (if any) are considered submitters. More importantly, no one besides these personnel may be listed as submitters. Using non-students as cast and "below-the-line" crewmembers is allowed.
+						</p>
+					</li>
+					<li>
+						<p>
+							Class projects are acceptable, but class exercises are not. In other words, all work, from idea to footage to edit, must be original to the submitters. Pieces created outside of class are also acceptable, but the same qualification rules apply
+						</p>
+					</li>
+					<li>
+						<p>
+							Each piece may be submitted to only one category. If you are at all unsure which category your piece belongs in, please consult a DFVP faculty member. If a submission is submitted for more than one category, the jury will decide which one best suits it and only judge it in that category. If the jury decides that a submission does not belong in the single category to which it was submitted, it may be moved. Submitters may or may not be notified of these changes. In either of these cases, though, the jury's decision is final.
+						</p>
+					</li>
+					<li>
+						<p>
+							If a piece does not meet all of these requirements, the jury shall disqualify it from consideration. Submitters shall be notified of the disqualification and the reasons for it. In the case of disqualification, the jury's decision is final.
+						</p>
+					</li>
+					<li>
+						<p>
+							Submissions must be submitted in DVD format to Art Cohen’s Mailbox.
+						</p>
+					</li>
+
+					<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+				</ol>
+			</div><!-- end /collapsible -->
+				<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>General Education</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Creative Writing Award This award recognizes a short story or a poem for its artistic merit. Students may submit as many as 5 poems of any length. Short stories should be 20 pages or less.	
+					</p></li>
+					<li><p>Multimedia Award This award recognizes any project created in response to a Gen Ed assignment that uses a medium other than traditional text. Media may include (but is not limited to) video/film, animation, music, photography, painting, drawing, and sculpture.
+					</p></li>
+					<li><p>Non-fiction Award This award recognizes critical, personal, and expository essays, including research papers and memoirs.									
+					</p></li>
+				</ul>
+				<h3>Submissions Requirements</h3>
+				<ol>
+					<li>
+						<p>Entries must be submitted to Tanya Larkin's mailbox</p>
+					</li>
+					<li>
+						<p>Non-fiction submissions should not be longer than 20 pages.</p>
+					</li>
+					<li>
+						<p>Excerpts of longer work are permitted</p>
+					</li>
+				</ol>
+				<p>Note: The Gen Ed department gravitates toward art that is perceptive, moving, true, and deeply felt. Emily Dickinson said she knows a good poem when she feels "physically as if the top of her head were taken off." We can only hope for a similar response to your submissions!</p>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+			</div><!-- end /collapsible -->
+			
+		
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Graphic Design & Advertising</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Audio Mix (This project will be judged on how well the audio is mixed. Levels, compression, equalization and other effects will be considered. Submissions can be stereo, mono or surround.. )
+					</p></li>
+					<li><p>Best Sound for Picture (This project will be judged on how well the audio fits with the video portion, as well as levels and effects [including panning and reverb])
+					</p></li>
+					<li><p>Best Overall Production (This project would need to have all of the requirements for best mix but, the student should have also tracked the audio as well as had something to do with the performance. This could be choosing the performers, arrangements and other aspects of a complete audio production.
+					</p></li>
+				</ul>
+				<h3>Requirements for submission</h3>
+				<ol>
+					<li><p>No more than 2 students can submit the same project. The students should have worked on the project equally.
+					</p></li>
+					<li><p>Projects can also be previous submissions for other awards such as the AES student award.
+					
+					</p></li>
+				</ol>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+			</div><!-- end /collapsible -->
+		
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Media Arts & Animation</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Audio Mix (This project will be judged on how well the audio is mixed. Levels, compression, equalization and other effects will be considered. Submissions can be stereo, mono or surround.. )
+					</p></li>
+					<li><p>Best Sound for Picture (This project will be judged on how well the audio fits with the video portion, as well as levels and effects [including panning and reverb])
+					</p></li>
+					<li><p>Best Overall Production (This project would need to have all of the requirements for best mix but, the student should have also tracked the audio as well as had something to do with the performance. This could be choosing the performers, arrangements and other aspects of a complete audio production.
+					</p></li>
+				</ul>
+				<h3>Requirements for submission</h3>
+				<ol>
+					<li><p>No more than 2 students can submit the same project. The students should have worked on the project equally.
+					</p></li>
+					<li><p>Projects can also be previous submissions for other awards such as the AES student award.
+					
+					</p></li>
+				</ol>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+			</div><!-- end /collapsible -->
+			
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Photography</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Audio Mix (This project will be judged on how well the audio is mixed. Levels, compression, equalization and other effects will be considered. Submissions can be stereo, mono or surround.. )
+					</p></li>
+					<li><p>Best Sound for Picture (This project will be judged on how well the audio fits with the video portion, as well as levels and effects [including panning and reverb])
+					</p></li>
+					<li><p>Best Overall Production (This project would need to have all of the requirements for best mix but, the student should have also tracked the audio as well as had something to do with the performance. This could be choosing the performers, arrangements and other aspects of a complete audio production.
+					</p></li>
+				</ul>
+				<h3>Requirements for submission</h3>
+				<ol>
+					<li><p>No more than 2 students can submit the same project. The students should have worked on the project equally.
+					</p></li>
+					<li><p>Projects can also be previous submissions for other awards such as the AES student award.
+					
+					</p></li>
+				</ol>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+
+				<a href="files/form.pdf" target="_self" data-role='button' data-icon='custom' id='martini' data-inline='true'>download form</a>
+			</div><!-- end /collapsible -->
+			
+			<div data-role='collapsible' data-collapsed='true' data-theme='c'
+			 data-icon='custom' id='badge'>
+				<h3>Web Design & Interactive Media</h3>
+				<h4>Awards Categories</h4>
+				<ul>
+					<li><p>Best Audio Mix (This project will be judged on how well the audio is mixed. Levels, compression, equalization and other effects will be considered. Submissions can be stereo, mono or surround.. )
+					</p></li>
+					<li><p>Best Sound for Picture (This project will be judged on how well the audio fits with the video portion, as well as levels and effects [including panning and reverb])
+					</p></li>
+					<li><p>Best Overall Production (This project would need to have all of the requirements for best mix but, the student should have also tracked the audio as well as had something to do with the performance. This could be choosing the performers, arrangements and other aspects of a complete audio production.
+					</p></li>
+				</ul>
+				<h3>Requirements for submission</h3>
+				<ol>
+					<li><p>No more than 2 students can submit the same project. The students should have worked on the project equally.
+					</p></li>
+					<li><p>Projects can also be previous submissions for other awards such as the AES student award.
+					
+					</p></li>
+				</ol>
+				<h3>Specifications for submission</h3>
+				<ol>
+					<li><p>Entries must be no longer than 10 minutes in length.</p></li>
+					<li><p>Entries must be labeled clearly</p></li>
+					<li><p>Entries should be put on CD or DVD and accompanied paperwork (production notes-see below) and placed in
+					Allan Kraut's mailbox, which is located in the education office</p></li>
+					<li><p>Submission deadline is March 1st, 2011</p></li>
+					<li>
+						<p>Complete production notes should accompany projects. The notes should include</p>
+						<ol>
+							<li><p>Personnel</p></li>
+							<li><p>Facilities used</p></li>
+							<li><p>Duties</p></li>
+							<li><p>Format information – (i.e. Red Book CD, MP3, Dolby surround etc.)</p></li>
+						</ol>
+					</li>
+					
+				</ol>
+				
+				<a href="http://aimeawards.com/docs/Student_Submissions.pdf" data-role='button' 
+					data-icon='custom' id='martini' data-inline='true' class='move'>Form
+				</a>
+			</div><!-- end /collapsible -->
+		</div><!-- End collapsible set -->
+
+		<!-- PAST WINNERS -->
+		<h2>Past winners.</h2>
+
+		
+
+		<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">	
+				<h2>General Education</h2>	
+				<ul data-role='listview' >
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />					
+						<h3>Best Creative Writing</h3>
+						
+						<p>"<span class="italic">Learning how to swim(How our Father's might have)"</span> -<br /> Kevin Clements.
+						</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />		
+						<h3>Best Non-Fiction</h3>
+						
+						<p><span class="italic">"Surrealism: An Applied Manifesto"<br />- Peter Lajoie.</p></span>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />					
+						<h3>Best Media Project</h3>
+						
+						<p>"Motherhood Shadowbox"<br />- Catherine Honeycomb</p>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">	
+				<h2>Graphic Design</h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Advertising Design</h3>
+						
+						<p>"<span class="italic">Abuse: Educate, Identify, Report” :Ad Campaign-"</span>-<br />  Patrick Devito
+						</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Publication Design</h3>
+						
+						<p><span class="italic">“Trail Blaze”-Corporate Identity Program  </span></p>
+						<p>	Rachel Cleveland.</p>
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Graphic Images</h3>
+						
+						<p>“Emily Dickinson: Typographic Portrait”:Digital Illustration-</p>
+						<p>Robert LeBlanc</p>	
+					</li>
+				</ul>
+
+
+			</div>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+				<h2>Media Arts &amp;Animation</h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Excellence in 2D Animation</h3>
+						
+						<p>"<span class="italic">“Ett Moln Ar Ett Lofte”-</span></p>
+						<p>Jeff Beckman</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Excellence in 3D Animation</h3>
+						
+						<p><span class="italic">“QStorm – Museum of Science”</span></p>
+						<p>TEAM Qstorm:	Michael Lowe, John Anderson, Becky Goguen, Diego Aguirre).</p>
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Animation</h3>
+						
+						<p>“Ultimate Man Meets Tenticlon” -</p>
+						<p>Jeff Beckman</p>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+				<h2>Audio &amp; Media Technology</h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Overall Production</h3>
+						
+						<p>"<span class="italic">““Disco Rockin’ the Sunshine””-</span></p>
+						<p>Jesse Allen Hanecak</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Sound for Picture</h3>
+						
+						<p><span class="italic">““Captain Feltbeard’s Unnecessary Adventures”</span></p>
+						<p>Emily Ferola &amp; Dustin O’Reilly</p>
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Mix</h3>
+						
+						<p>“U“Under the Radar” -</p>
+						<p>Stephen Wirtes</p>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">	
+				<h2>Digital Video and Film Production</h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Experimental</h3>
+						
+						<p>"<span class="italic">"Kage and Pallaso"-</span></p>
+						<p>JBojan Vanovac</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Fiction/Narrative</h3>
+						
+						<p><span class="italic">"Smoked"</span>-</p>
+						<p>Andrea Simmons</p>
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Nonfiction</h3>
+						
+						<p>“The History of Hopedale" -</p>
+						<p>Tim Howe, Stacy Morris Charles Henneberry</p>	
+					</li>
+				</ul>
+			</div>
+				<h2>2010 Winner's</h2>	
+				 
+				 <h3>Honorary AwardOutstanding Achievement</h3>
+				 <p>Lynn Hoffman</p>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+				<h2>General Education </h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Creative Writing</h3>
+						<p><span class="italic">Taking Care of the Arrangements”-</span></p>
+						<p>Jill Jankowski</p>
+					</li>
+				
+				</ul>
+			</div>
+
+			<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+				<h2>Graphic Design</h2>	
+				<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+					<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Advertising / Marketing</h3>
+						
+						<p>"<span class="italic">“Ghiradelli Packaging”-</span></p>
+						<p>Elliot Jackson</p>	
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Publication Design</h3>
+						
+						<p><span class="italic">“Catch-22”</span></p>
+						<p>Richard Gertz</p>
+					</li>
+						<li class="m1">
+						<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+						<h3>Best Fine Art</h3>
+						
+						<p>“Peppers &amp; Oranges” -</p>
+						<p>Brandon McArdle</p>	
+					</li>
+				</ul>
+			</div>
+
+				<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+					<h2>Media Arts &amp; Animation</h2>	
+					<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Excellence in 2D Animation</h3>
+							
+							<p>"<span class="italic">“Otterly Dangerous Waters”--</span></p>
+							<p>Sean Sullivan</p>	
+						</li>
+							<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Excellence in 3D Animation</h3>
+							
+							<p><span class="italic">Desert Patrol”</span></p>
+							<p>Tristan Cobb</p>
+						</li>
+							<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Animation</h3>
+							
+							<p>“Mime Fight”-</p>
+							<p>Ralph Sutter</p>	
+						</li>
+					</ul>
+				</div>
+
+				<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+					<h2>Audio &amp; Media Technology</h2>	
+					<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Overall Production</h3>
+							
+							<p>"<span class="italic">“The Ultimate Showdown”-</span></p>
+							<p>Greg Lanzillotta</p>	
+						</li>
+							<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Sound for Picture</h3>
+							
+							<p><span class="italic">“Open Question”-</span></p>
+							<p>Sam Willgoose</p>
+						</li>
+					</ul>
+				</div>
+
+				<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+					<h2>Photography</h2>	
+					<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>The Constructed</h3>
+							
+							<p>"<span class="italic">“Heavy Heart”-</span></p>
+							<p>Travis Williams</p>	
+						</li>
+							<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>The Self</h3>
+							
+							<p><span class="italic">“H!P$T3R: Reflections”-</span></p>
+							<p> Renee Rorer</p>
+						</li>
+					</ul>
+				</div>
+
+				<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+					<h2>Digital Filmmaking &amp; Video Production</h2>	
+					<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Experimental</h3>
+							
+							<p>"<span class="italic">"One Pair at a Time"-</span></p>
+							<p>Chaos Films</p>	
+						</li>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Fiction/Narrative</h3>
+							
+							<p><span class="italic">"Drip"-</span></p>
+							<p>The Golden Monkeys</p>
+						</li>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Nonfiction</h3>
+							
+							<p>"<span class="italic">"Ice Bound"-</span></p>
+							<p>Mason/Kolinsky Productions</p>	
+						</li>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Fashion and Retail Management</h3>
+							<p>The Best Visual Award</p>	
+							<p>"<span class="italic">“Eye of Retail”-</span></p>
+							<p>The Visual Team</p>	
+						</li>
+					</ul>
+				</div>
+
+				<div data-role='collapsible' data-split-icon='custom' data-split-theme='a' id="golf">		
+					<h2>Web Design &amp; Interactive Media</h2>	
+					<ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Interactive design</h3>
+							
+							<p>"<span class="italic">Dog Track”-</span></p>
+							<p>Adam Fehnel</p>	
+						</li>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />						
+							<h3>Best Interactive development</h3>
+							
+							<p><span class="italic">“Assign It”-</span></p>
+							<p>Ouellette &amp; Caporaso</p>
+						</li>
+						<li class="m1">
+							<img src="img/black-sm.png" alt="Art Institute logo/small black" />
+							<h3>Best Interactive Rich Media</h3>
+
+							<p><span class="italic">“Interactive Performance”-</span></p>
+							<p> Kyle Kellogg</p>
+						</li>
+					</ul>
+				</div>
+		</div><!-- /content -->
+		
+		<div data-role='footer' data-theme='a'>
+		
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+			<p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+			</h4>	
+		</div><!-- end footer -->	
+		
+	</div><!-- /page -->
+
+	<!-- MAP -->
+
+	<div id="details" data-role="page" class="details-page">
+            <div data-role="header" data-theme="a">
+			    <nav data-role='navbar' data-theme='c' class='custom'>
+					<ul data-ajax='false'>
+						<li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+						<li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+						<li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+						<li class='button'><a href="#details" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+						<li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+					</ul>
+				</nav>
+
+				<img src="img/black-1.png" alt=""  id="sm-logo"/>
+				<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+				<h1>Directions</h1>
+              
+            </div>
+
+            <div data-role="content" id="map_content" data-theme="a">
+                <div id="map_content">
+                    <div id="map_canvas"></div>
+                </div>
+            </div>
+
+            <div data-role='footer' data-theme='a'>
+		
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+			<p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+			</h4>	
+
+		</div><!-- end footer -->	
+        </div>
+
+        <script type="text/javascript" src="js/mobile.js"></script>
+
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        <script type="text/javascript">
+
+            function initialize() {
+                setupMap(-43.60132, 172.11984, 11, true);
+                var quakeEventLatlng = new google.maps.LatLng(-43.601, 172.12);
+                var marker = createQuakeEventMarker(quakeEventLatlng)
+                marker.setAnimation(google.maps.Animation.DROP)
+            }
+
+            // Initialize the map when the jQuery Mobile pageshow event is triggered
+            $('.details-page').live("pageshow", function() {
+                if (map == null) {
+                    initialize();
+                }
+            });
+
+        </script>
+
+
+  
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+ 
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

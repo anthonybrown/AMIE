@@ -1,0 +1,388 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>  <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>  <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<!--[// This is a comment I want to say that this is the base links for all the links on this app \\]-->
+
+<!-- <base href="http://www.server.com/app-name/path/"> -->
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+     More info: h5bp.com/b/378 -->
+
+
+  <title>Tony Brown Site</title>
+  <meta name="description" content="jQuery mobile site, mobile design and development, Art Instituet AiME awards">
+  <meta name="author" content="Tony Brown">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+
+ 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />  
+    <link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'> 
+   
+  
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+     Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+     For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+   <script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+ 
+</head>
+
+<body class="ui-mobile-viewport">
+    
+  <div data-role="page" id="one" data-title='Home_Page'>
+  
+    
+    <div data-role="header" class='custom' data-theme='a'>
+
+      
+      <nav data-role='navbar' data-theme='c' class='custom'>
+        <ul>
+          <li class='button'><a href="index.html" data-icon='custom' id='home' 
+            data-icon='custom' transition='pop' rel='external'>home</a></li>
+          
+          <li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup' rel='external'>contact</a></li>
+        </ul>
+      </nav>
+        <img src="img/black-1.png" alt=""  id="sm-logo"/>
+      <h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+      <h1>Contact AiME Awards</h1>
+      
+    </div><!-- /header -->
+
+    <div data-role="content" data-theme='c'>  
+      <h2>Get in touch!</h2>
+      <form id="form1" method="post" action="sendmail.php">
+        <fieldset>
+          <p><lable>Name: </lable> <em>*</em><input type="text" name="name" size="20" class="required" /><p>
+          <p><lable>Email: </lable> <em>*</em><input type="text" name="email" size="20" class="required email" /></p>
+          <p><lable>Message: </lable> <em>*</em><textarea name="message" rows="10" cols="7" class="required"></textarea></p>
+          <p><input type="submit" name="submit" value="send" /></p>
+      </fieldset>
+      </form>
+
+      <div class='thankyou'>
+        <p>Thank you. Your message will be sent and someone will be in touch.</p>
+      </div>
+    
+        <script type="text/javascript">
+
+
+
+          $(document).ready(function() {
+            $('#form1').validate();
+            
+        });
+            $.validator.setDefaults({
+            submitHandler: function() {
+              alert("Form has been submitted!");
+              return true;
+            }
+          });
+        </script>
+      
+        
+    </div><!-- /content -->
+
+    <div data-role='footer' data-theme='a'>
+    
+      <img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="img/black-sm.png" alt="" class="neia" />
+      <h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+      <p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+      </h4> 
+    </div><!-- end footer --> 
+    
+  </div><!-- /page -->
+  
+  <div data-role="page" id="about" data-title='About AMiE'>
+  
+    
+    <div data-role="header" class='custom' data-theme='b'>
+
+      
+   <nav data-role='navbar' data-theme='c' class='custom'>
+        <ul>
+          <li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+          <li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+          <li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+          <li class='button'><a href="#map" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+          <li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup'>contact</a></li>
+        </ul>
+      </nav>
+        <img src="img/amie-small1.png" alt=""  id="sm-logo"/>
+      <h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+      <h1>AMiE Awards</h1>
+      
+    </div><!-- /header -->
+
+    <div data-role="content" data-theme='c'>  
+      <div data-role='collapsible' data-collapsed='true'>
+      <h1>Department Heads</h1> 
+      <div data-role='collapsible'> 
+        <h2>Digital Filmaking &amp; Video Production</h2> 
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+          <li class="m1">
+            <a href="dfv.html" data-rel='dialog' data-transition='slidedown'> 
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Art Cohen</h3>
+            <p>digital film making</p>
+            <p>video production</p>
+            </a>
+            <a href="dfv.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>Audio Production</h2> 
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='c'>
+          <li class="m1">
+            <a href="audio.html" data-rel='dialog' data-transition='slide'> 
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Allan Kraut</h3>
+            <p>audio category</p>
+            </a>
+            <a href="audio.html" data-role='button' data-rel='dialog' data-transition='slideup'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>Graphic Design</h2> 
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+          <li class="m1">
+            <a href="graphic.html" data-rel='dialog' data-transition='fade'>  
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Stephanie Warnesky</h3>
+            <p>Graphic Design category</p>
+            </a>
+            <a href="graphic.html" data-role='button' data-rel='dialog' data-transition='slidedown'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>Media Arts &amp; Animation</h2> 
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='b'>
+          <li class="m1">
+            <a href="ma.html" data-rel='dialog' data-transition='pop'>  
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Jason Donati</h3>
+            <p>Graphic Design category</p>
+            </a>
+            <a href="ma.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a> 
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>Photography</h2>  
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='b'>
+          <li class="m1">
+            <a href="photo.html" data-rel='dialog' data-transition='pop'> 
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Dan O'Connor</h3>
+            <p>Photography category</p>
+            </a>
+            <a href="photo.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>Web Design &amp; Interactive Media</h2> 
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+          <li class="m1">
+            <a href="web.html" data-rel='dialog' data-transition='pop'> 
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Jason Donati</h3>
+            <p>Web category</p>
+            </a>
+            <a href="web.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role='collapsible'> 
+        <h2>General Education</h2>  
+        <ul data-role='listview' data-split-icon='gear' data-split-theme='a'>
+          <li class="m1">
+            <a href="gen.html" data-rel='dialog' data-transition='pop'> 
+            <img src="img/amie-small1.png" alt="" />          
+            <h3>Larkintlarkin</h3>
+            <p>General Education category</p>
+            </a>
+            <a href="gen.html" data-role='button' data-rel='dialog' data-transition='pop'>Click Here</a>  
+          </li>
+        </ul>
+      </div>
+                    
+    </div><!-- end collapsible set -->
+
+    <h2>About AiME Awards</h1>
+      <p>Bigger and better than ever, the 2011 AiME Awards will recognize work from Digital Filmmaking & Video Production, Audio Production, Photography, Media Arts & Animation, Fashion & Retail Management, Advertising, Graphic Design, Web Design & Interactive Media and General Education. The deadline for submission is March 1st, 2011. The 2011 AiME Awards show will be held on April 7th at 6pm at the Coolidge Corner Theatre.
+      </p>
+      
+      <h2>Frequently Asked Questions(FAQS)</h2>
+      <ol>
+        
+        <li><h3>Q:When do I need to submit my work by?</h3></li>
+        <li><h3>A:The deadline for all submissions is March 1st, 2011.</h3></li>
+        <li><h3>Q:What if copyrighted material is used within my project, can I still submit?</h3></li>
+        <li><h3>A:Yes.</h3></li>
+        <li><h3>Q:How will I know if I have been nominated?</h3></li>
+        <li><h3>A:If you are nominated to win an award you will be contacted after the final decisions are made.</h3></li>
+        <li><h3>Q:Will I still get an award if I can't make it to the awards show?</h3></li>
+        <li><h3>A:Yes.</h3></li>
+        <li><h3>Q:What If I worked on my project with a partner or a group of people, who will receive the award if we win?</h3></li>
+        <li><h3>A:Only one person can win an award. But a groups name can be put on the award. More than one person can go up on stage to accept the award.</h3></li>
+        <li><h3>Q:When/Where is the awards show being held?</h3></li>
+        <li><h3>A: At the Coolidge Corner Theatre on April 7th, 2011, at 6:00 pm.</h3></li>
+        <li><h3>Q:Will it cost money to attend the show?</h3></li>
+        <li><h3>A: No, the AiME Awards are a free event.</h3></li>
+        <li><h3>Q:How long will the show be?</h3></li>
+        <li><h3>A:Approximately 3 hours long.</h3></li>
+        <li><h3>Q:Can I still submit work if I am a recent graduate of The New England Institute of Art?.</h3></li>
+        <li><h3>A:Yes, you can submit work to the AiMEs if you were enrolled at The New England Institute of Art between January 2010 and May 2011. But, the work you submit must have been completed between January 2010 and May 2011. Any work with a completion date that falls before January 1st, 2010 will not be considered for submission.</h3></li>
+        
+      </ol> 
+        
+    </div><!-- /content -->
+
+    <div data-role='footer' data-theme='a' >
+    
+      <img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="img/black-sm.png" alt="" class="neia" />
+      <h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+      <p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+      </h4> 
+    </div><!-- end footer --> 
+    
+  </div><!-- /page -->
+  
+  <div data-role="page" id="submit" data-title='Submit'>
+  
+    
+    <div data-role="header" class='custom' data-theme='b'>
+
+      
+      <nav data-role='navbar' data-theme='c' class='custom'>
+        <ul>
+          <li class='button'><a href="#one" data-icon='custom' id='home' data-transition='pop'>home</a></li>
+          <li class='button'><a href="#about" data-icon='custom' id='plan'data-transition='pop'>about</a></li>
+          <li class='button'><a href="#submit" data-icon='custom' id='beaker' data-transition='pop'>submit</a></li>
+          <li class='button'><a href="#map" data-icon='custom' id='map' data-transition='slidedown'>map</a></li>
+          <li class='button'><a href="contact.html" data-icon='custom' id='contact' data-transition='slideup'>contact</a></li>
+        </ul>
+      </nav>
+        <img src="img/amie-small1.png" alt=""  id="sm-logo"/>
+      <h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+      <h1>AMiE Awards</h1>
+      
+    </div><!-- /header -->
+
+    
+     <div class="ui-content" data-role="content" role="main" data-theme="c">
+     <h2>Contact</h2>
+  
+  
+  
+    <form method="post" action="form.php">
+      <p>Name: <input type="text" name="name" size="20" /></p>
+      <p>Email: <input type="text" name="email" size="20" /></p>
+      <p>Message: <textarea rows="10" cols="7"></textarea></p>
+      <input type="submit" name="submit" value="send" data-role='button' data-icon='delete' />
+    </form>
+  </div>
+        
+    </div><!-- /content -->
+
+    <div data-role='footer' data-theme='e'>
+    
+      <img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="img/black-sm.png" alt="" class="neia" />
+      <h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+      <p><span class="gold">&copy; 2010 --2012 All Rights Reserved By <br />The New England Institute of Art</span></p>
+      </h4> 
+    </div><!-- end footer --> 
+    
+  </div><!-- /page -->
+  
+  
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+
+  
+ 
+
+  
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+ 
+  <!-- end scripts-->
+
+  
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<!--[// This is a comment I want to say that this is the base links for all the links on this app \\]-->
+
+<!-- <base href="http://www.server.com/app-name/path/"> -->
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	   More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>audio</title>
+  <meta name="description" content="jQuery Mobile Site for AiME Awards">
+  <meta name="author" content="Tony Brown">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width-device" />
+ 
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+	  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+  <link rel="stylesheet" href="css/style2.css" />  
+  
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--[if lt IE 7 ]><script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script><![endif]-->
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+	   Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+	   For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  
+</head>
+
+<body class="ui-mobile-viewport">
+	<div  data-role="page" id="audio"
+		style="min-height: 320px;" data-theme="b">
+		<!-- PAGE HEADER  PAGE ONE -->
+		<div class="ui-bar-a ui-header" data-role="header" role="banner" data-theme="c">
+		
+		
+			<img src="img/black-1.png" alt=""  id="sm-logo"/>
+			<h1 class="ui-title" tabindex="0" data-role="heading" role="banner">
+			
+				AiME Awards!
+			</h1>
+			
+		</div><!-- end ui-bar-a ui-header -->
+		
+		
+		<!-- MAIN CONTENT -->
+		
+		<div class="ui-content" data-role="content" role="main" data-theme="b">
+	<a href="#"  data-rel='back'>Back</a>
+		<h3>Allan Kraut</h3>
+		<h4>Audio Production</h4>
+		<ul>
+			<li><p>Email: <a href="mailto:akraut@aii.edu">akraut@aii.edu</a></p></li>
+			<li><p>Phone: 555 222 1221</p><a href="tel:555 555 1212">555.222.1212</a></li>
+			<li><p></p></li>
+		</ul>
+					
+		</div><!-- end #main -->
+		
+		<!-- FOOTER CONTENT -->
+			
+		<div data-role='footer' data-theme='a'>
+			
+			<img src="img/neia_logo.png" alt="" class="ai" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/black-sm.png" alt="" class="neia" />
+			<h4 class="ui-title" tabindex="0" role="heading" aria-level="1">
+				<p>&copy; 2010 --2012 All Rights Reserved By <br /><span class="gold">The New England Institute of Art</span></p>
+			</h4>	
+		</div><!-- end footer -->
+	</div><!-- end submissions page -->
+	
+			
+	
+	<div class="ui-loader ui-body-a ui-corner-all" style="top: 334px;">
+		<span class="ui-icon ui-icon-loading spin"></span>
+		<h1>loading</h1>
+	</div><!-- end loading -->
+	
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+	Modernizr.load({
+	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	});
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
